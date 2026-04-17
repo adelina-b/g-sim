@@ -1,0 +1,17 @@
+# build / packaging artifacts
+*.egg-info/
+dist/
+build/
+
+# local compiled extension
+*.so
+
+# python cache
+__pycache__/
+*.py[cod]
+
+# notebooks
+.ipynb_checkpoints/
+
+# macOS
+.DS_Store
