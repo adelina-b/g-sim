@@ -2,9 +2,9 @@
 
 This repository accompanies the paper
 
-- `[insert paper title]` — `[insert arXiv / DOI link]`
+- A. Bärligea et al., "Enabling Lie Algebraic Classical Simulation beyond Free Fermions" — <https://arxiv.org/abs/2604.16701>
 
-and builds on the Lie-algebraic simulation framework introduced in
+and builds on the Lie-algebraic simulation framework of
 
 - M. L. Goh et al., “Lie-algebraic classical simulations for quantum computing” — <https://doi.org/10.1103/3y65-f5w6>
 
@@ -143,7 +143,7 @@ This folder contains precomputed sparse preprocessing data used by some of the e
 ### 1. Clone the repository
 
 ```bash
-git clone [insert repo url]
+git clone https://github.com/adelina-b/g-sim.git
 cd g-sim
 ```
 
@@ -171,13 +171,10 @@ For Pauli-string preprocessing in the symplectic representation, the current imp
 
 Please install `PauliEngine` separately by following its installation instructions:
 
-* `[insert PauliEngine repository / installation link]`
+* `[https://github.com/tequilahub/pauliengine]`
 
-At the moment, the repository includes a locally built shared object file
-
-* `PauliEngine.cpython-39-darwin.so`
-
-that reflects the development environment in which the code was tested. In general, users should rebuild `PauliEngine` for their own system and Python version, and replace this binary accordingly. This is a temporary limitation of the current development state; a cleaner installation route is planned for future releases.
+At the moment, users have to rebuild `PauliEngine` for their own system and Python version.
+This is a temporary limitation of the current development state; a cleaner installation route is planned for future releases.
 
 ## Running the tutorials
 
@@ -229,26 +226,32 @@ Because these workflows are currently tailored to the specific experiments in th
 If you use this repository, please cite:
 
 ```bibtex
-@misc{[insert key for accompanying paper]},
-  title        = {[insert paper title]},
-  author       = {[insert authors]},
-  year         = {[insert year]},
-  eprint       = {[insert arXiv id]},
-  archivePrefix= {arXiv},
-  primaryClass = {[insert arXiv category]}
+@misc{Barligea2026},
+      title={Enabling Lie-Algebraic Classical Simulation beyond Free Fermions}, 
+      author={Adelina Bärligea and Matthew L. Sims-Goh and Jakob S. Kottmann},
+      year={2026},
+      eprint={2604.16701},
+      archivePrefix={arXiv},
+      primaryClass={quant-ph},
+      url={https://arxiv.org/abs/2604.16701}, 
 }
 ```
 
 and, where appropriate, also cite the original $\mathfrak{g}$-sim paper:
 
 ```bibtex
-@misc{goh2025gsim,
-  title        = {Lie-algebraic classical simulations for quantum computing},
-  author       = {Matthew L. Goh and Martin Larocca and Lukasz Cincio and M. Cerezo and Frédéric Sauvage},
-  year         = {2025},
-  eprint       = {2308.01432},
-  archivePrefix= {arXiv},
-  primaryClass = {quant-ph}
+@article{Goh2025,
+  title = {Lie-algebraic classical simulations for quantum computing},
+  volume = {7},
+  ISSN = {2643-1564},
+  url = {http://dx.doi.org/10.1103/3y65-f5w6},
+  DOI = {10.1103/3y65-f5w6},
+  number = {3},
+  journal = {Physical Review Research},
+  publisher = {American Physical Society (APS)},
+  author = {Goh,  Matthew L. and Larocca,  Martin and Cincio,  Lukasz and Cerezo,  M. and Sauvage,  Frédéric},
+  year = {2025},
+  month = sept 
 }
 ```
 
