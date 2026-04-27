@@ -150,6 +150,7 @@ cd g-sim
 ### 2. Install the package in editable mode
 
 ```bash
+python -m pip install -r requirements.txt  
 python -m pip install -e .
 ```
 

@@ -1,0 +1,14 @@
+# Core runtime dependencies
+numpy
+scipy
+numba
+networkx
+
+# Tutorial / notebook dependencies used in examples/
+matplotlib
+tqdm
+tequila-basic
+qulacs
+
+# Intentionally omitted:
+# - PauliEngine: install separately per README.md
